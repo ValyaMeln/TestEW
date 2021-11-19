@@ -1,0 +1,50 @@
+.wrapper{
+    position: relative;
+    background-color: #3a0963;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+}
+.ball{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background: #CC3F85;
+    border-radius: 50%;
+    animation: dwa-bounce 2s linear infinite;
+
+}
+
+.line{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px;
+    height: 3px;
+    bottom: 50px;
+    animation: dwa-bounce_2 2s infinite;
+    box-shadow: 0 4px 4px rgba(255, 255, 255, 0.4);
+
+}
+
+@keyframes dwa-bounce {
+    0% { bottom: 60%}
+    25% {bottom: 10%; width: 100px; height: 100px; }
+    30% {bottom: 10%; height: 50px; width: 110px; }
+    35% {bottom: 10%; width: 100px; height: 100px; }
+    100%{bottom: 60%;}
+}
+
+@keyframes dwa-bounce_2 {
+    0% {opacity: 0}
+    25% {opacity: 0;  }
+    30% {opacity: .8; }
+    35% {opacity: 0; }
+    100%{opacity: 0;}
+
+
+}
